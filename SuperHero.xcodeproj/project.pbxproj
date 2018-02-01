@@ -14,6 +14,8 @@
 		577A64602023078E00761F97 /* SuperHeroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A645F2023078E00761F97 /* SuperHeroUITests.swift */; };
 		57AF0A672023163F00790281 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF0A662023163E00790281 /* Alamofire.framework */; };
 		57AF0A682023163F00790281 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF0A662023163E00790281 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		57AF0A6D2023199100790281 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A6C2023199100790281 /* SuperHero.swift */; };
+		57AF0A6E2023199100790281 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A6C2023199100790281 /* SuperHero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 		577A645F2023078E00761F97 /* SuperHeroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroUITests.swift; sourceTree = "<group>"; };
 		577A64612023078E00761F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57AF0A662023163E00790281 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		57AF0A6C2023199100790281 /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,7 @@
 				577A64462023078E00761F97 /* Assets.xcassets */,
 				577A64482023078E00761F97 /* LaunchScreen.storyboard */,
 				577A644B2023078E00761F97 /* Info.plist */,
+				57AF0A6C2023199100790281 /* SuperHero.swift */,
 			);
 			path = SuperHero;
 			sourceTree = "<group>";
@@ -273,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				577A64402023078E00761F97 /* AppDelegate.swift in Sources */,
+				57AF0A6D2023199100790281 /* SuperHero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				577A64552023078E00761F97 /* SuperHeroTests.swift in Sources */,
+				57AF0A6E2023199100790281 /* SuperHero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
