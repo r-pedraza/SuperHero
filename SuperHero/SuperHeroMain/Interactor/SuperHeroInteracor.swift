@@ -1,5 +1,5 @@
 import Foundation
 
-class SuperHeroInteractor {
-    
+class SuperHeroInteractor: SuperHeroInteractorProtocol {
+    var presenter: SuperHeroPresenterProtocol!
 }
