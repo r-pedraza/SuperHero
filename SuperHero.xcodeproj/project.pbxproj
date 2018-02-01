@@ -18,6 +18,24 @@
 		57AF0A6E2023199100790281 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A6C2023199100790281 /* SuperHero.swift */; };
 		57AF0A7220231A9D00790281 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7120231A9D00790281 /* Router.swift */; };
 		57AF0A7320231A9D00790281 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7120231A9D00790281 /* Router.swift */; };
+		57AF0A7620231C9A00790281 /* SuperHeroInteracor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7520231C9A00790281 /* SuperHeroInteracor.swift */; };
+		57AF0A7720231C9A00790281 /* SuperHeroInteracor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7520231C9A00790281 /* SuperHeroInteracor.swift */; };
+		57AF0A7920231CBA00790281 /* SuperHeroInteracorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7820231CBA00790281 /* SuperHeroInteracorProtocol.swift */; };
+		57AF0A7A20231CBA00790281 /* SuperHeroInteracorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7820231CBA00790281 /* SuperHeroInteracorProtocol.swift */; };
+		57AF0A7D20231CDB00790281 /* SuperHeroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7C20231CDB00790281 /* SuperHeroPresenter.swift */; };
+		57AF0A7E20231CDB00790281 /* SuperHeroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7C20231CDB00790281 /* SuperHeroPresenter.swift */; };
+		57AF0A8020231CE500790281 /* SuperHeroPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7F20231CE500790281 /* SuperHeroPresenterProtocol.swift */; };
+		57AF0A8120231CE500790281 /* SuperHeroPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7F20231CE500790281 /* SuperHeroPresenterProtocol.swift */; };
+		57AF0A8420231D0F00790281 /* SuperHeroRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8320231D0F00790281 /* SuperHeroRouting.swift */; };
+		57AF0A8520231D0F00790281 /* SuperHeroRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8320231D0F00790281 /* SuperHeroRouting.swift */; };
+		57AF0A8720231D1900790281 /* SuperHeroRoutingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8620231D1900790281 /* SuperHeroRoutingProtocol.swift */; };
+		57AF0A8820231D1900790281 /* SuperHeroRoutingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8620231D1900790281 /* SuperHeroRoutingProtocol.swift */; };
+		57AF0A8B20231D4A00790281 /* SuperHeroViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8A20231D4A00790281 /* SuperHeroViewProtocol.swift */; };
+		57AF0A8C20231D4A00790281 /* SuperHeroViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8A20231D4A00790281 /* SuperHeroViewProtocol.swift */; };
+		57AF0A8E20231D6400790281 /* SuperHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8D20231D6400790281 /* SuperHeroViewController.swift */; };
+		57AF0A8F20231D6400790281 /* SuperHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8D20231D6400790281 /* SuperHeroViewController.swift */; };
+		57AF0A9220231D9900790281 /* SuperHeroViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AF0A9120231D9900790281 /* SuperHeroViewController.storyboard */; };
+		57AF0A9320231D9900790281 /* SuperHeroViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AF0A9120231D9900790281 /* SuperHeroViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +84,15 @@
 		57AF0A662023163E00790281 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		57AF0A6C2023199100790281 /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
 		57AF0A7120231A9D00790281 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		57AF0A7520231C9A00790281 /* SuperHeroInteracor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroInteracor.swift; sourceTree = "<group>"; };
+		57AF0A7820231CBA00790281 /* SuperHeroInteracorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroInteracorProtocol.swift; sourceTree = "<group>"; };
+		57AF0A7C20231CDB00790281 /* SuperHeroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroPresenter.swift; sourceTree = "<group>"; };
+		57AF0A7F20231CE500790281 /* SuperHeroPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroPresenterProtocol.swift; sourceTree = "<group>"; };
+		57AF0A8320231D0F00790281 /* SuperHeroRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroRouting.swift; sourceTree = "<group>"; };
+		57AF0A8620231D1900790281 /* SuperHeroRoutingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroRoutingProtocol.swift; sourceTree = "<group>"; };
+		57AF0A8A20231D4A00790281 /* SuperHeroViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroViewProtocol.swift; sourceTree = "<group>"; };
+		57AF0A8D20231D6400790281 /* SuperHeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroViewController.swift; sourceTree = "<group>"; };
+		57AF0A9120231D9900790281 /* SuperHeroViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SuperHeroViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +145,7 @@
 		577A643E2023078E00761F97 /* SuperHero */ = {
 			isa = PBXGroup;
 			children = (
+				57AF0A7420231C7700790281 /* SuperHeroMain */,
 				57AF0A7020231A1C00790281 /* APIClient */,
 				577A643F2023078E00761F97 /* AppDelegate.swift */,
 				577A64462023078E00761F97 /* Assets.xcassets */,
@@ -160,6 +188,54 @@
 				57AF0A7120231A9D00790281 /* Router.swift */,
 			);
 			path = APIClient;
+			sourceTree = "<group>";
+		};
+		57AF0A7420231C7700790281 /* SuperHeroMain */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A9020231D7100790281 /* View */,
+				57AF0A7B20231CCE00790281 /* Interactor */,
+				57AF0A8220231D0200790281 /* Presenter */,
+				57AF0A8920231D2F00790281 /* Routing */,
+			);
+			path = SuperHeroMain;
+			sourceTree = "<group>";
+		};
+		57AF0A7B20231CCE00790281 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A7520231C9A00790281 /* SuperHeroInteracor.swift */,
+				57AF0A7820231CBA00790281 /* SuperHeroInteracorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		57AF0A8220231D0200790281 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A7C20231CDB00790281 /* SuperHeroPresenter.swift */,
+				57AF0A7F20231CE500790281 /* SuperHeroPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		57AF0A8920231D2F00790281 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A8320231D0F00790281 /* SuperHeroRouting.swift */,
+				57AF0A8620231D1900790281 /* SuperHeroRoutingProtocol.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		57AF0A9020231D7100790281 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A8A20231D4A00790281 /* SuperHeroViewProtocol.swift */,
+				57AF0A8D20231D6400790281 /* SuperHeroViewController.swift */,
+				57AF0A9120231D9900790281 /* SuperHeroViewController.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +348,7 @@
 			files = (
 				577A644A2023078E00761F97 /* LaunchScreen.storyboard in Resources */,
 				577A64472023078E00761F97 /* Assets.xcassets in Resources */,
+				57AF0A9220231D9900790281 /* SuperHeroViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AF0A9320231D9900790281 /* SuperHeroViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,9 +374,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AF0A8B20231D4A00790281 /* SuperHeroViewProtocol.swift in Sources */,
+				57AF0A8720231D1900790281 /* SuperHeroRoutingProtocol.swift in Sources */,
+				57AF0A7920231CBA00790281 /* SuperHeroInteracorProtocol.swift in Sources */,
 				577A64402023078E00761F97 /* AppDelegate.swift in Sources */,
+				57AF0A7D20231CDB00790281 /* SuperHeroPresenter.swift in Sources */,
+				57AF0A8020231CE500790281 /* SuperHeroPresenterProtocol.swift in Sources */,
 				57AF0A6D2023199100790281 /* SuperHero.swift in Sources */,
 				57AF0A7220231A9D00790281 /* Router.swift in Sources */,
+				57AF0A8420231D0F00790281 /* SuperHeroRouting.swift in Sources */,
+				57AF0A7620231C9A00790281 /* SuperHeroInteracor.swift in Sources */,
+				57AF0A8E20231D6400790281 /* SuperHeroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,9 +392,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AF0A8C20231D4A00790281 /* SuperHeroViewProtocol.swift in Sources */,
+				57AF0A8820231D1900790281 /* SuperHeroRoutingProtocol.swift in Sources */,
+				57AF0A7A20231CBA00790281 /* SuperHeroInteracorProtocol.swift in Sources */,
 				577A64552023078E00761F97 /* SuperHeroTests.swift in Sources */,
+				57AF0A7E20231CDB00790281 /* SuperHeroPresenter.swift in Sources */,
+				57AF0A8120231CE500790281 /* SuperHeroPresenterProtocol.swift in Sources */,
 				57AF0A6E2023199100790281 /* SuperHero.swift in Sources */,
 				57AF0A7320231A9D00790281 /* Router.swift in Sources */,
+				57AF0A8520231D0F00790281 /* SuperHeroRouting.swift in Sources */,
+				57AF0A7720231C9A00790281 /* SuperHeroInteracor.swift in Sources */,
+				57AF0A8F20231D6400790281 /* SuperHeroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
