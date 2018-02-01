@@ -7,13 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		576549502023C433007098EA /* SuperHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5765494F2023C433007098EA /* SuperHeroes.swift */; };
+		576549512023C433007098EA /* SuperHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5765494F2023C433007098EA /* SuperHeroes.swift */; };
 		577A64402023078E00761F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A643F2023078E00761F97 /* AppDelegate.swift */; };
 		577A64472023078E00761F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577A64462023078E00761F97 /* Assets.xcassets */; };
 		577A644A2023078E00761F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577A64482023078E00761F97 /* LaunchScreen.storyboard */; };
-		577A64552023078E00761F97 /* SuperHeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A64542023078E00761F97 /* SuperHeroTests.swift */; };
 		577A64602023078E00761F97 /* SuperHeroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A645F2023078E00761F97 /* SuperHeroUITests.swift */; };
 		57AF0A672023163F00790281 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF0A662023163E00790281 /* Alamofire.framework */; };
 		57AF0A682023163F00790281 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF0A662023163E00790281 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		57AF0A6D2023199100790281 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A6C2023199100790281 /* SuperHero.swift */; };
+		57AF0A6E2023199100790281 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A6C2023199100790281 /* SuperHero.swift */; };
+		57AF0A7220231A9D00790281 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7120231A9D00790281 /* Router.swift */; };
+		57AF0A7320231A9D00790281 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7120231A9D00790281 /* Router.swift */; };
+		57AF0A7620231C9A00790281 /* SuperHeroInteracor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7520231C9A00790281 /* SuperHeroInteracor.swift */; };
+		57AF0A7720231C9A00790281 /* SuperHeroInteracor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7520231C9A00790281 /* SuperHeroInteracor.swift */; };
+		57AF0A7920231CBA00790281 /* SuperHeroInteracorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7820231CBA00790281 /* SuperHeroInteracorProtocol.swift */; };
+		57AF0A7A20231CBA00790281 /* SuperHeroInteracorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7820231CBA00790281 /* SuperHeroInteracorProtocol.swift */; };
+		57AF0A7D20231CDB00790281 /* SuperHeroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7C20231CDB00790281 /* SuperHeroPresenter.swift */; };
+		57AF0A7E20231CDB00790281 /* SuperHeroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7C20231CDB00790281 /* SuperHeroPresenter.swift */; };
+		57AF0A8020231CE500790281 /* SuperHeroPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7F20231CE500790281 /* SuperHeroPresenterProtocol.swift */; };
+		57AF0A8120231CE500790281 /* SuperHeroPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7F20231CE500790281 /* SuperHeroPresenterProtocol.swift */; };
+		57AF0A8420231D0F00790281 /* SuperHeroRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8320231D0F00790281 /* SuperHeroRouting.swift */; };
+		57AF0A8520231D0F00790281 /* SuperHeroRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8320231D0F00790281 /* SuperHeroRouting.swift */; };
+		57AF0A8720231D1900790281 /* SuperHeroRoutingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8620231D1900790281 /* SuperHeroRoutingProtocol.swift */; };
+		57AF0A8820231D1900790281 /* SuperHeroRoutingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8620231D1900790281 /* SuperHeroRoutingProtocol.swift */; };
+		57AF0A8B20231D4A00790281 /* SuperHeroViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8A20231D4A00790281 /* SuperHeroViewProtocol.swift */; };
+		57AF0A8C20231D4A00790281 /* SuperHeroViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8A20231D4A00790281 /* SuperHeroViewProtocol.swift */; };
+		57AF0A8E20231D6400790281 /* SuperHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8D20231D6400790281 /* SuperHeroViewController.swift */; };
+		57AF0A8F20231D6400790281 /* SuperHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A8D20231D6400790281 /* SuperHeroViewController.swift */; };
+		57AF0A9220231D9900790281 /* SuperHeroViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AF0A9120231D9900790281 /* SuperHeroViewController.storyboard */; };
+		57AF0A9320231D9900790281 /* SuperHeroViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AF0A9120231D9900790281 /* SuperHeroViewController.storyboard */; };
+		57AF0A9B202354E200790281 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57AF0A662023163E00790281 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		57AF0A9D2023564E00790281 /* AlamofireRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A9C2023564D00790281 /* AlamofireRequestTests.swift */; };
+		57B98A94202358A8004ACC04 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF0A662023163E00790281 /* Alamofire.framework */; };
+		57C388462023C5900023C63A /* DecodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C388452023C5900023C63A /* DecodableExtension.swift */; };
+		57C388472023C5900023C63A /* DecodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C388452023C5900023C63A /* DecodableExtension.swift */; };
+		57C388492023C59A0023C63A /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C388482023C59A0023C63A /* EncodableExtension.swift */; };
+		57C3884C2023C6170023C63A /* SuperHeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3884B2023C6170023C63A /* SuperHeroTests.swift */; };
+		57C3884E2023CF140023C63A /* SuperHeroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3884D2023CF140023C63A /* SuperHeroesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,21 +76,47 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		57AF0A9A202354C200790281 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				57AF0A9B202354E200790281 /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5765494F2023C433007098EA /* SuperHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroes.swift; sourceTree = "<group>"; };
 		577A643C2023078E00761F97 /* SuperHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577A643F2023078E00761F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		577A64462023078E00761F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		577A64492023078E00761F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		577A644B2023078E00761F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577A64502023078E00761F97 /* SuperHeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperHeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		577A64542023078E00761F97 /* SuperHeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroTests.swift; sourceTree = "<group>"; };
 		577A64562023078E00761F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577A645B2023078E00761F97 /* SuperHeroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperHeroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		577A645F2023078E00761F97 /* SuperHeroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroUITests.swift; sourceTree = "<group>"; };
 		577A64612023078E00761F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57AF0A662023163E00790281 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		57AF0A6C2023199100790281 /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
+		57AF0A7120231A9D00790281 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		57AF0A7520231C9A00790281 /* SuperHeroInteracor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroInteracor.swift; sourceTree = "<group>"; };
+		57AF0A7820231CBA00790281 /* SuperHeroInteracorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroInteracorProtocol.swift; sourceTree = "<group>"; };
+		57AF0A7C20231CDB00790281 /* SuperHeroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroPresenter.swift; sourceTree = "<group>"; };
+		57AF0A7F20231CE500790281 /* SuperHeroPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroPresenterProtocol.swift; sourceTree = "<group>"; };
+		57AF0A8320231D0F00790281 /* SuperHeroRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroRouting.swift; sourceTree = "<group>"; };
+		57AF0A8620231D1900790281 /* SuperHeroRoutingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroRoutingProtocol.swift; sourceTree = "<group>"; };
+		57AF0A8A20231D4A00790281 /* SuperHeroViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroViewProtocol.swift; sourceTree = "<group>"; };
+		57AF0A8D20231D6400790281 /* SuperHeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroViewController.swift; sourceTree = "<group>"; };
+		57AF0A9120231D9900790281 /* SuperHeroViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SuperHeroViewController.storyboard; sourceTree = "<group>"; };
+		57AF0A9C2023564D00790281 /* AlamofireRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireRequestTests.swift; sourceTree = "<group>"; };
+		57C388452023C5900023C63A /* DecodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableExtension.swift; sourceTree = "<group>"; };
+		57C388482023C59A0023C63A /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
+		57C3884B2023C6170023C63A /* SuperHeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroTests.swift; sourceTree = "<group>"; };
+		57C3884D2023CF140023C63A /* SuperHeroesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B98A94202358A8004ACC04 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +146,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5765494B20239A8C007098EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57C388452023C5900023C63A /* DecodableExtension.swift */,
+				57C388482023C59A0023C63A /* EncodableExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		577A64332023078E00761F97 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +163,7 @@
 				577A64532023078E00761F97 /* SuperHeroTests */,
 				577A645E2023078E00761F97 /* SuperHeroUITests */,
 				577A643D2023078E00761F97 /* Products */,
+				57B98A93202358A8004ACC04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +180,9 @@
 		577A643E2023078E00761F97 /* SuperHero */ = {
 			isa = PBXGroup;
 			children = (
+				5765494B20239A8C007098EA /* Extensions */,
+				57AF0A7420231C7700790281 /* SuperHeroMain */,
+				57AF0A7020231A1C00790281 /* APIClient */,
 				577A643F2023078E00761F97 /* AppDelegate.swift */,
 				577A64462023078E00761F97 /* Assets.xcassets */,
 				577A64482023078E00761F97 /* LaunchScreen.storyboard */,
@@ -123,7 +194,7 @@
 		577A64532023078E00761F97 /* SuperHeroTests */ = {
 			isa = PBXGroup;
 			children = (
-				577A64542023078E00761F97 /* SuperHeroTests.swift */,
+				57C3884F2023D1AD0023C63A /* APIClient */,
 				577A64562023078E00761F97 /* Info.plist */,
 			);
 			path = SuperHeroTests;
@@ -136,6 +207,97 @@
 				577A64612023078E00761F97 /* Info.plist */,
 			);
 			path = SuperHeroUITests;
+			sourceTree = "<group>";
+		};
+		57AF0A6F20231A0E00790281 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A6C2023199100790281 /* SuperHero.swift */,
+				5765494F2023C433007098EA /* SuperHeroes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		57AF0A7020231A1C00790281 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A6F20231A0E00790281 /* Models */,
+				57AF0A7120231A9D00790281 /* Router.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		57AF0A7420231C7700790281 /* SuperHeroMain */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A9020231D7100790281 /* View */,
+				57AF0A7B20231CCE00790281 /* Interactor */,
+				57AF0A8220231D0200790281 /* Presenter */,
+				57AF0A8920231D2F00790281 /* Routing */,
+			);
+			path = SuperHeroMain;
+			sourceTree = "<group>";
+		};
+		57AF0A7B20231CCE00790281 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A7520231C9A00790281 /* SuperHeroInteracor.swift */,
+				57AF0A7820231CBA00790281 /* SuperHeroInteracorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		57AF0A8220231D0200790281 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A7C20231CDB00790281 /* SuperHeroPresenter.swift */,
+				57AF0A7F20231CE500790281 /* SuperHeroPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		57AF0A8920231D2F00790281 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A8320231D0F00790281 /* SuperHeroRouting.swift */,
+				57AF0A8620231D1900790281 /* SuperHeroRoutingProtocol.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		57AF0A9020231D7100790281 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A8A20231D4A00790281 /* SuperHeroViewProtocol.swift */,
+				57AF0A8D20231D6400790281 /* SuperHeroViewController.swift */,
+				57AF0A9120231D9900790281 /* SuperHeroViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57B98A93202358A8004ACC04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57C3884F2023D1AD0023C63A /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A9C2023564D00790281 /* AlamofireRequestTests.swift */,
+				57C388502023D1B90023C63A /* Models */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		57C388502023D1B90023C63A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57C3884B2023C6170023C63A /* SuperHeroTests.swift */,
+				57C3884D2023CF140023C63A /* SuperHeroesTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +328,7 @@
 				577A644C2023078E00761F97 /* Sources */,
 				577A644D2023078E00761F97 /* Frameworks */,
 				577A644E2023078E00761F97 /* Resources */,
+				57AF0A9A202354C200790281 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -248,6 +411,7 @@
 			files = (
 				577A644A2023078E00761F97 /* LaunchScreen.storyboard in Resources */,
 				577A64472023078E00761F97 /* Assets.xcassets in Resources */,
+				57AF0A9220231D9900790281 /* SuperHeroViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AF0A9320231D9900790281 /* SuperHeroViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +437,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AF0A8B20231D4A00790281 /* SuperHeroViewProtocol.swift in Sources */,
+				57AF0A8720231D1900790281 /* SuperHeroRoutingProtocol.swift in Sources */,
+				57AF0A7920231CBA00790281 /* SuperHeroInteracorProtocol.swift in Sources */,
+				57C388492023C59A0023C63A /* EncodableExtension.swift in Sources */,
 				577A64402023078E00761F97 /* AppDelegate.swift in Sources */,
+				57AF0A7D20231CDB00790281 /* SuperHeroPresenter.swift in Sources */,
+				576549502023C433007098EA /* SuperHeroes.swift in Sources */,
+				57AF0A8020231CE500790281 /* SuperHeroPresenterProtocol.swift in Sources */,
+				57AF0A6D2023199100790281 /* SuperHero.swift in Sources */,
+				57AF0A7220231A9D00790281 /* Router.swift in Sources */,
+				57AF0A8420231D0F00790281 /* SuperHeroRouting.swift in Sources */,
+				57AF0A7620231C9A00790281 /* SuperHeroInteracor.swift in Sources */,
+				57C388462023C5900023C63A /* DecodableExtension.swift in Sources */,
+				57AF0A8E20231D6400790281 /* SuperHeroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +458,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				577A64552023078E00761F97 /* SuperHeroTests.swift in Sources */,
+				57AF0A8C20231D4A00790281 /* SuperHeroViewProtocol.swift in Sources */,
+				57AF0A8820231D1900790281 /* SuperHeroRoutingProtocol.swift in Sources */,
+				57AF0A9D2023564E00790281 /* AlamofireRequestTests.swift in Sources */,
+				57AF0A7A20231CBA00790281 /* SuperHeroInteracorProtocol.swift in Sources */,
+				57AF0A7E20231CDB00790281 /* SuperHeroPresenter.swift in Sources */,
+				576549512023C433007098EA /* SuperHeroes.swift in Sources */,
+				57AF0A8120231CE500790281 /* SuperHeroPresenterProtocol.swift in Sources */,
+				57AF0A6E2023199100790281 /* SuperHero.swift in Sources */,
+				57AF0A7320231A9D00790281 /* Router.swift in Sources */,
+				57C3884C2023C6170023C63A /* SuperHeroTests.swift in Sources */,
+				57AF0A8520231D0F00790281 /* SuperHeroRouting.swift in Sources */,
+				57C3884E2023CF140023C63A /* SuperHeroesTests.swift in Sources */,
+				57AF0A7720231C9A00790281 /* SuperHeroInteracor.swift in Sources */,
+				57C388472023C5900023C63A /* DecodableExtension.swift in Sources */,
+				57AF0A8F20231D6400790281 /* SuperHeroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5BX4GZ5WM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -449,6 +642,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5BX4GZ5WM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -468,6 +662,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5BX4GZ5WM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SuperHeroTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RaulPedrazaLeon.SuperHeroTests;
@@ -484,6 +683,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5BX4GZ5WM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SuperHeroTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RaulPedrazaLeon.SuperHeroTests;
