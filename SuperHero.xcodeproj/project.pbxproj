@@ -16,6 +16,8 @@
 		57AF0A682023163F00790281 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF0A662023163E00790281 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57AF0A6D2023199100790281 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A6C2023199100790281 /* SuperHero.swift */; };
 		57AF0A6E2023199100790281 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A6C2023199100790281 /* SuperHero.swift */; };
+		57AF0A7220231A9D00790281 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7120231A9D00790281 /* Router.swift */; };
+		57AF0A7320231A9D00790281 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AF0A7120231A9D00790281 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,7 @@
 		577A64612023078E00761F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57AF0A662023163E00790281 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		57AF0A6C2023199100790281 /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
+		57AF0A7120231A9D00790281 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +118,11 @@
 		577A643E2023078E00761F97 /* SuperHero */ = {
 			isa = PBXGroup;
 			children = (
+				57AF0A7020231A1C00790281 /* APIClient */,
 				577A643F2023078E00761F97 /* AppDelegate.swift */,
 				577A64462023078E00761F97 /* Assets.xcassets */,
 				577A64482023078E00761F97 /* LaunchScreen.storyboard */,
 				577A644B2023078E00761F97 /* Info.plist */,
-				57AF0A6C2023199100790281 /* SuperHero.swift */,
 			);
 			path = SuperHero;
 			sourceTree = "<group>";
@@ -140,6 +143,23 @@
 				577A64612023078E00761F97 /* Info.plist */,
 			);
 			path = SuperHeroUITests;
+			sourceTree = "<group>";
+		};
+		57AF0A6F20231A0E00790281 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A6C2023199100790281 /* SuperHero.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		57AF0A7020231A1C00790281 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				57AF0A6F20231A0E00790281 /* Models */,
+				57AF0A7120231A9D00790281 /* Router.swift */,
+			);
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +298,7 @@
 			files = (
 				577A64402023078E00761F97 /* AppDelegate.swift in Sources */,
 				57AF0A6D2023199100790281 /* SuperHero.swift in Sources */,
+				57AF0A7220231A9D00790281 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +308,7 @@
 			files = (
 				577A64552023078E00761F97 /* SuperHeroTests.swift in Sources */,
 				57AF0A6E2023199100790281 /* SuperHero.swift in Sources */,
+				57AF0A7320231A9D00790281 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
