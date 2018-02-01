@@ -12,6 +12,8 @@
 		577A644A2023078E00761F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577A64482023078E00761F97 /* LaunchScreen.storyboard */; };
 		577A64552023078E00761F97 /* SuperHeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A64542023078E00761F97 /* SuperHeroTests.swift */; };
 		577A64602023078E00761F97 /* SuperHeroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A645F2023078E00761F97 /* SuperHeroUITests.swift */; };
+		57AF0A672023163F00790281 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF0A662023163E00790281 /* Alamofire.framework */; };
+		57AF0A682023163F00790281 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF0A662023163E00790281 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		577A6474202313F700761F97 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				57AF0A682023163F00790281 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		577A643C2023078E00761F97 /* SuperHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577A643F2023078E00761F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +59,7 @@
 		577A645B2023078E00761F97 /* SuperHeroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperHeroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		577A645F2023078E00761F97 /* SuperHeroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroUITests.swift; sourceTree = "<group>"; };
 		577A64612023078E00761F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57AF0A662023163E00790281 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AF0A672023163F00790281 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +91,7 @@
 		577A64332023078E00761F97 = {
 			isa = PBXGroup;
 			children = (
+				57AF0A662023163E00790281 /* Alamofire.framework */,
 				577A643E2023078E00761F97 /* SuperHero */,
 				577A64532023078E00761F97 /* SuperHeroTests */,
 				577A645E2023078E00761F97 /* SuperHeroUITests */,
@@ -129,6 +148,7 @@
 				577A64382023078E00761F97 /* Sources */,
 				577A64392023078E00761F97 /* Frameworks */,
 				577A643A2023078E00761F97 /* Resources */,
+				577A6474202313F700761F97 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,6 +431,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SuperHero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RaulPedrazaLeon.SuperHero;
@@ -425,6 +449,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SuperHero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RaulPedrazaLeon.SuperHero;
