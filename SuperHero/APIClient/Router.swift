@@ -15,7 +15,7 @@ enum Router: URLRequestConvertible {
     var path: String {
         switch self {
         case .getMarvelSuperHeroes:
-            return "https://api.myjson.com/bins/bvyob"
+            return ""
         }
     }
     
