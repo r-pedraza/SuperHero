@@ -9,13 +9,16 @@ class SuperHeroViewController: UIViewController, SuperHeroViewProtocol {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        if let navigationController = navigationController {
+        if let navigationController = navigationController as? SuperHeroNavigationController {
             _ = SuperHeroRouting(navigationController: navigationController, viewController: self).setup()
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let navigationController = navigationController as? SuperHeroNavigationController {
+            navigationController.hidde()
+        }
         setupTableView()
     }
     
@@ -48,7 +51,7 @@ extension SuperHeroViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deleteRows(at: [indexPath], with: .fade)
+        tableView.deselectRow(at: indexPath, animated: true)
         presenter.selectRow(at: indexPath)
     }
 }
