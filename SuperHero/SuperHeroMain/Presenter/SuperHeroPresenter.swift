@@ -12,10 +12,19 @@ class SuperHeroPresenter: SuperHeroPresenterProtocol {
     }
     
     func numberOfRows(at section: Int) -> Int {
-        return 1
+        return interactor.superHeroes.count
     }
     
     func buildCell(at indexpath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let superHero = interactor.superHero(at: indexpath.row)
+        return view.tableCellFactoryReference.createCell(viewModel: superHero) as SuperHeroTableCell
+    }
+    
+    func superHero(at: IndexPath) -> ViewModel {
+        return ViewModel.self as! ViewModel
+    }
+    
+    func reloadData() {
+        view.reloadData()
     }
 }
