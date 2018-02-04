@@ -14,14 +14,12 @@ class SuperHeroViewController: UIViewController, SuperHeroViewProtocol {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if let navigationController = navigationController as? SuperHeroNavigationController {
-            navigationController.setHidden(true)
-        }
         setupTableView()
         presenter.execute()
     }
     
     private func setupTableView() {
+        title = "Marvel"
         tableCellFactory = TableCellFactory(tableView: tableView)
         tableView.delegate = self
         tableView.dataSource = self

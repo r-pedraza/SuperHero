@@ -20,7 +20,6 @@ class SuperHeroRouting: SuperHeroRoutingProtocol {
     }
     //MARK: SuperHeroRoutingProtocol
     func superHeroDetail(with superHero: SuperHero) {
-        navigationController.setHidden(false)
         let storyBoard = UIStoryboard(name: "SuperHeroDetailViewController", bundle: nil)
         if let superHeroDetailViewController = storyBoard.instantiateViewController(withIdentifier: "SuperHeroDetailViewControllerID") as? SuperHeroDetailViewController {
             navigationController.pushViewController(viewController: superHeroDetailViewController, animated: true, completion: {
