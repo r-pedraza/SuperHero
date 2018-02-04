@@ -28,29 +28,5 @@ class AlamofireRequestTests: XCTestCase {
             })
         waitForExpectations(timeout: 10, handler: nil)
     }
-    
-    func testParseMarvelModelWithApiResponse() {
-        let request = Router.getMarvelSuperHeroes()
-        let expect = expectation(description: "Get some marvels super heroes!")
-        Alamofire.request(request)
-            .validate(statusCode: 200..<300)
-            .responseData(completionHandler: { (response) in
-                    switch response.result {
-                    case .success(let data):
-                        let decoder = JSONDecoder()
-                        do {
-                            let response = try decoder.decode(SuperHeroes.self, from: data)
-                            XCTAssertFalse(response.superheroes.isEmpty)
-                        } catch let error as NSError {
-                            debugPrint(error.localizedDescription)
-                        }
-                        
-                    case .failure(let error):
-                        debugPrint(error.localizedDescription)
-                    }
-                expect.fulfill()
-                })
-        waitForExpectations(timeout: 10, handler: nil)
-    }
 }
 

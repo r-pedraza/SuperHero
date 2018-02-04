@@ -1,5 +1,6 @@
 import Foundation
 
-protocol SuperHeroInteracorProtocol {
-    
+protocol SuperHeroInteractorProtocol {
+    var superHeroes: [SuperHero] { get }
+    func superHero(at index: Int) -> SuperHero
 }

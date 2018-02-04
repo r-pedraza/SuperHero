@@ -1,6 +1,6 @@
 import Foundation
 
-struct SuperHero: Codable {
+struct SuperHero: Codable, ViewModel {
     let name: String
     let photo: String
     let realName: String

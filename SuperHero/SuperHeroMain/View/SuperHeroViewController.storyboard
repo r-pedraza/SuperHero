@@ -17,10 +17,25 @@
                     <view key="view" contentMode="scaleToFill" id="YtX-H4-Vwg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r1N-zQ-emx">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r1N-zQ-emx" firstAttribute="trailing" secondItem="y0e-we-U2X" secondAttribute="trailing" id="6PB-vx-ThF"/>
+                            <constraint firstItem="r1N-zQ-emx" firstAttribute="leading" secondItem="y0e-we-U2X" secondAttribute="leading" id="IcG-pn-fhK"/>
+                            <constraint firstItem="y0e-we-U2X" firstAttribute="bottom" secondItem="r1N-zQ-emx" secondAttribute="bottom" id="oRF-a3-FUR"/>
+                            <constraint firstItem="r1N-zQ-emx" firstAttribute="top" secondItem="y0e-we-U2X" secondAttribute="top" id="xyY-I3-leY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="y0e-we-U2X"/>
                     </view>
                     <navigationItem key="navigationItem" id="YW0-Ad-heS"/>
+                    <connections>
+                        <outlet property="tableView" destination="r1N-zQ-emx" id="ta0-IP-M7T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OEy-MM-HyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -29,7 +44,7 @@
         <!--Navigation Controller-->
         <scene sceneID="aGn-Aq-9Ph">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7WH-qI-Y6I" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="superHeroNavigationBarControllerID" automaticallyAdjustsScrollViewInsets="NO" id="7WH-qI-Y6I" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I6d-9K-2dC">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
