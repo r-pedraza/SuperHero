@@ -2,7 +2,6 @@ import Alamofire
 
 enum Router: URLRequestConvertible {
     case getMarvelSuperHeroes()
-    
     static let baseURLString = "https://api.myjson.com/bins/bvyob"
     
     var method: HTTPMethod {
@@ -18,9 +17,7 @@ enum Router: URLRequestConvertible {
             return ""
         }
     }
-    
     // MARK: URLRequestConvertible
-    
     func asURLRequest() throws -> URLRequest {
         let url = try Router.baseURLString.asURL()
         

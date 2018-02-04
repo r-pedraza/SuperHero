@@ -2,7 +2,6 @@ import Foundation
 import UIKit
 
 class TableCellFactory {
-    
     private let tableView: UITableView
     
     init(tableView: UITableView) {
@@ -22,5 +21,3 @@ class TableCellFactory {
             return cell
     }
 }
-
-

@@ -1,7 +1,6 @@
 import Foundation
 
 class SuperHeroDetailRouting: SuperHeroDetailRoutingProtocol {
-    
     private let superHeroDetailViewController: SuperHeroDetailViewController
     
     init(superHeroDetailViewController: SuperHeroDetailViewController) {

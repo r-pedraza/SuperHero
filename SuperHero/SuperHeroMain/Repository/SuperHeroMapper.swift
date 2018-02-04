@@ -1,27 +1,22 @@
 import Foundation
 
-enum mapperError: Error {
+enum MapperError: Error {
     case processError(Error)
 }
 
 class SuperHeroMapper: Mapper {
-
     typealias E = Error
-    typealias T = SuperHero
+    typealias T = SuperHeroes
     
-    func process(data: Data) throws -> [SuperHero]  {
-        let decoder = JSONDecoder()
-        var superHeroes = [SuperHero]()
+    func process(data: Data) throws -> SuperHeroes {
         do {
-            let response = try decoder.decode(SuperHeroes.self, from: data)
-            superHeroes.append(contentsOf: response.superheroes)
+            return try SuperHeroes.decode(data: data)
         } catch let error {
-            throw mapperError.processError(error)
+            throw MapperError.processError(error)
         }
-        return superHeroes
     }
     
-    func processError(dictionary: [String : AnyObject]) -> Error {
-        return Error.self  as! Error
+    func processError(dictionary: [String : Any]) -> Error {
+        return "Error processing data \(dictionary)"
     }
 }

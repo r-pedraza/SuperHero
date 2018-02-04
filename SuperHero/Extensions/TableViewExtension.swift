@@ -10,7 +10,6 @@ public extension UITableView {
         guard let cell = dequeueReusableCell(withIdentifier: T.nibName) as? T else {
             fatalError("\(T.nibName) could not be dequeued as \(T.self)")
         }
-        
         return cell
     }
     
@@ -18,9 +17,6 @@ public extension UITableView {
         guard let cell = dequeueReusableCell(withIdentifier: T.nibName, for: indexPath) as? T else {
             fatalError("\(T.nibName) could not be dequeued for \(indexPath) as \(T.self)")
         }
-        
         return cell
     }
 }
-
-

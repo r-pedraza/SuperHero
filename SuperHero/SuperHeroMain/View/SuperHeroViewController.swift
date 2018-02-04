@@ -3,10 +3,8 @@ import UIKit
 class SuperHeroViewController: UIViewController, SuperHeroViewProtocol {
     var presenter: SuperHeroPresenterProtocol!
     @IBOutlet weak var tableView: UITableView!
+    var tableCellFactory: TableCellFactory!
     
-    var tableCellFactoryReference: TableCellFactory {
-        return TableCellFactory(tableView: tableView)
-    }
     override func awakeFromNib() {
         super.awakeFromNib()
         if let navigationController = navigationController as? SuperHeroNavigationController {
@@ -17,12 +15,14 @@ class SuperHeroViewController: UIViewController, SuperHeroViewProtocol {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if let navigationController = navigationController as? SuperHeroNavigationController {
-            navigationController.hidde()
+            navigationController.setHidden(true)
         }
         setupTableView()
+        presenter.execute()
     }
     
     private func setupTableView() {
+        tableCellFactory = TableCellFactory(tableView: tableView)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = 180
@@ -34,8 +34,7 @@ class SuperHeroViewController: UIViewController, SuperHeroViewProtocol {
         tableView.reloadData()
     }
 }
-
-    //MARK: UITableViewDataSource, UITableViewDelegate
+//MARK: UITableViewDataSource, UITableViewDelegate
 extension SuperHeroViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -47,7 +46,8 @@ extension SuperHeroViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return presenter.buildCell(at: indexPath)
+        let superHero = presenter.superHero(at: indexPath)
+        return tableCellFactory.createCell(viewModel: superHero) as SuperHeroTableCell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

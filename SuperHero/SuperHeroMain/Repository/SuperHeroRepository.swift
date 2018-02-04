@@ -1,26 +1,30 @@
 import Foundation
 
 class SuperHeroRepository: Repository {
-   
-    private lazy var superHeroStorage = SuperHeroStorage()
-    private lazy var superHeroAPIService = SuperHeroAPIClient()
-    private lazy var superHeroMapper = SuperHeroMapper()
-    typealias T = [SuperHero]
+    private var superHeroStorage = SuperHeroStorage()
+    private var superHeroAPIService = SuperHeroAPIClient()
+    private var superHeroMapper = SuperHeroMapper()
+    typealias T = SuperHero
     
-    func getSuperHeroes(completionHandler: @escaping ([SuperHero])->(), errorHandler: @escaping (Error)->())  {
+    func getAllItems(completionHandler: @escaping ([SuperHero]) -> Void, errorHandler: @escaping (Error) -> Void)  {
         superHeroAPIService.getSuperHeroes(completionhandler: { data in
-            do {
-                let superHeroes = try self.superHeroMapper.process(data: data)
-                superHeroes.forEach {
-                    self.superHeroStorage.add(superHero: $0)
+            DispatchQueue.main.async {
+                do {
+                    let response = try self.superHeroMapper.process(data: data)
+                    response.superheroes.forEach(self.superHeroStorage.add)
+                    completionHandler(self.superHeroStorage.superHeroes())
+                } catch let error {
+                    errorHandler(error)
                 }
-                completionHandler(self.superHeroStorage.superHeroes())
-            } catch let error {
-                errorHandler(error)
             }
-            
-        }) { error in
-            errorHandler(error)
-        }
+        }, errorHandler: errorHandler)
+    }
+    
+    func getItem(at indexPath: IndexPath) -> SuperHero {
+        return superHeroStorage.superHeroes()[indexPath.row]
+    }
+    
+    var items: [SuperHero]{
+        return superHeroStorage.superHeroes()
     }
 }

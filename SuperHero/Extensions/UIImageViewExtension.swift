@@ -1,7 +1,6 @@
 import UIKit
 
 extension UIImageView {
-    
     func setImage(urlString: String) {
         guard let url = URL(string: urlString) else { return }
         URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
@@ -23,5 +22,4 @@ extension UIImageView {
         addSubview(blurEffectView)
     }
 }
-
 

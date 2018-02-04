@@ -1,20 +1,14 @@
 import UIKit
 
 class SuperHeroNavigationController: UINavigationController {
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
+
+    private enum Constants {
+        static let animationDuration: Double = 0.2
     }
     
-    func hidde() {
-        UIView.animate(withDuration: 0.2) {
-            self.isNavigationBarHidden = true
-        }
-    }
-    
-    func show() {
-        UIView.animate(withDuration: 0.2) {
-            self.isNavigationBarHidden = false
+    func setHidden(_ hidde: Bool) {
+        UIView.animate(withDuration: Constants.animationDuration) {
+            self.isNavigationBarHidden = hidde
         }
     }
     

@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 struct SuperHero: Codable, ViewModel {    
     let name: String

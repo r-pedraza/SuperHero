@@ -1,7 +1,6 @@
 import UIKit
 
 extension UINavigationController {
-    
     public func pushViewController(viewController: UIViewController,
                                    animated: Bool,
                                    completion: (() -> Void)?) {
@@ -10,5 +9,4 @@ extension UINavigationController {
         pushViewController(viewController, animated: animated)
         CATransaction.commit()
     }
-    
 }

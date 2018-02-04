@@ -9,5 +9,3 @@ public extension UITableViewCell {
         return UINib(nibName: nibName, bundle: nil)
     }
 }
-
-

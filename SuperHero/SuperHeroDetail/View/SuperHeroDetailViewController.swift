@@ -2,7 +2,6 @@ import UIKit
 
 class SuperHeroDetailViewController: UIViewController, SuperHeroDetailViewProtocol {
     var presenter: SuperHeroDetailPresenterProtocol!
-    
     @IBOutlet weak var superHeroImageView: UIImageView!
     @IBOutlet weak var realNameLabel: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
@@ -14,9 +13,7 @@ class SuperHeroDetailViewController: UIViewController, SuperHeroDetailViewProtoc
         super.awakeFromNib()
         _ = SuperHeroDetailRouting(superHeroDetailViewController: self).setup()
     }
-    
     //MARK: SuperHeroDetailViewProtocol
-    
     func setup(with superHero: SuperHero) {
         title = superHero.name
         superHeroImageView.setImage(urlString: superHero.photo)
@@ -27,5 +24,4 @@ class SuperHeroDetailViewController: UIViewController, SuperHeroDetailViewProtoc
         abilitiesLabel.text = superHero.abilities
         groupsLabel.text = superHero.groups
     }
-
 }

@@ -1,24 +1,25 @@
 import Foundation
 
 class SuperHeroInteractor: SuperHeroInteractorProtocol {
-    var presenter: SuperHeroPresenterProtocol!
-    let superHeroRepository = SuperHeroRepository()
-    var superHeroes = [SuperHero]()
+    let superHeroRepository: SuperHeroRepository
     
-    init() {
-        execute()
+    init(repository: SuperHeroRepository) {
+        self.superHeroRepository = repository
     }
     
-    private func execute() {
-        superHeroRepository.getSuperHeroes(completionHandler: { superHeroresResponse in
-            self.superHeroes = superHeroresResponse
-            self.presenter.reloadData()
+    func execute(completionHandler: @escaping () -> Void) {
+        superHeroRepository.getAllItems(completionHandler: { superHeroresResponse in
+            completionHandler()
         }, errorHandler: { error in
             debugPrint(error)
         })
     }
     
-    func superHero(at index: Int) -> SuperHero {
-        return superHeroes[index]
+    func superHero(at index: IndexPath) -> SuperHero {
+        return superHeroRepository.getItem(at: index)
+    }
+    
+    func allSuperHeroes() -> [SuperHero] {
+        return superHeroRepository.items
     }
 }

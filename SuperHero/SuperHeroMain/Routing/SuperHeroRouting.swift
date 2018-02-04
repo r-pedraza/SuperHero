@@ -10,18 +10,17 @@ class SuperHeroRouting: SuperHeroRoutingProtocol {
     }
     
     func setup() {
-        let interactor = SuperHeroInteractor()
+        let superHeroRepository = SuperHeroRepository()
+        let interactor = SuperHeroInteractor(repository: superHeroRepository)
         let presenter = SuperHeroPresenter()
-        interactor.presenter = presenter
         presenter.interactor = interactor
         presenter.routing = self
         presenter.view = viewController
         viewController.presenter = presenter
     }
     //MARK: SuperHeroRoutingProtocol
-    
     func superHeroDetail(with superHero: SuperHero) {
-        navigationController.show()
+        navigationController.setHidden(false)
         let storyBoard = UIStoryboard(name: "SuperHeroDetailViewController", bundle: nil)
         if let superHeroDetailViewController = storyBoard.instantiateViewController(withIdentifier: "SuperHeroDetailViewControllerID") as? SuperHeroDetailViewController {
             navigationController.pushViewController(viewController: superHeroDetailViewController, animated: true, completion: {
