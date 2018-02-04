@@ -74,6 +74,24 @@
 		57C3887D2026E67D0023C63A /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3887B2026E67D0023C63A /* UIImageViewExtension.swift */; };
 		57C3887F2026E8600023C63A /* MapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3887E2026E8600023C63A /* MapperProtocol.swift */; };
 		57C388802026E8600023C63A /* MapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3887E2026E8600023C63A /* MapperProtocol.swift */; };
+		57C388852026FB500023C63A /* SuperHeroDetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C388842026FB500023C63A /* SuperHeroDetailViewProtocol.swift */; };
+		57C388862026FB500023C63A /* SuperHeroDetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C388842026FB500023C63A /* SuperHeroDetailViewProtocol.swift */; };
+		57C388882026FB620023C63A /* SuperHeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C388872026FB620023C63A /* SuperHeroDetailViewController.swift */; };
+		57C388892026FB620023C63A /* SuperHeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C388872026FB620023C63A /* SuperHeroDetailViewController.swift */; };
+		57C3888B2026FB6B0023C63A /* SuperHeroDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C3888A2026FB6B0023C63A /* SuperHeroDetailViewController.storyboard */; };
+		57C3888C2026FB6B0023C63A /* SuperHeroDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C3888A2026FB6B0023C63A /* SuperHeroDetailViewController.storyboard */; };
+		57C3888F2026FD4F0023C63A /* SuperHeroDetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3888E2026FD4F0023C63A /* SuperHeroDetailInteractorProtocol.swift */; };
+		57C388902026FD540023C63A /* SuperHeroDetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3888E2026FD4F0023C63A /* SuperHeroDetailInteractorProtocol.swift */; };
+		57C388922026FD600023C63A /* SuperHeroDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C388912026FD600023C63A /* SuperHeroDetailInteractor.swift */; };
+		57C388932026FD600023C63A /* SuperHeroDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C388912026FD600023C63A /* SuperHeroDetailInteractor.swift */; };
+		57C388962026FD970023C63A /* SuperHeroDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C388952026FD970023C63A /* SuperHeroDetailPresenterProtocol.swift */; };
+		57C388972026FD970023C63A /* SuperHeroDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C388952026FD970023C63A /* SuperHeroDetailPresenterProtocol.swift */; };
+		57C388992026FDA20023C63A /* SuperHeroDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C388982026FDA20023C63A /* SuperHeroDetailPresenter.swift */; };
+		57C3889A2026FDA20023C63A /* SuperHeroDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C388982026FDA20023C63A /* SuperHeroDetailPresenter.swift */; };
+		57C3889D2026FDCF0023C63A /* SuperHeroDetailRoutingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3889C2026FDCF0023C63A /* SuperHeroDetailRoutingProtocol.swift */; };
+		57C3889E2026FDCF0023C63A /* SuperHeroDetailRoutingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3889C2026FDCF0023C63A /* SuperHeroDetailRoutingProtocol.swift */; };
+		57C388A02026FDD90023C63A /* SuperHeroDetailRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3889F2026FDD90023C63A /* SuperHeroDetailRouting.swift */; };
+		57C388A12026FDD90023C63A /* SuperHeroDetailRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3889F2026FDD90023C63A /* SuperHeroDetailRouting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +178,15 @@
 		57C3887620262A440023C63A /* SuperHeroTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuperHeroTableCell.xib; sourceTree = "<group>"; };
 		57C3887B2026E67D0023C63A /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		57C3887E2026E8600023C63A /* MapperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperProtocol.swift; sourceTree = "<group>"; };
+		57C388842026FB500023C63A /* SuperHeroDetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailViewProtocol.swift; sourceTree = "<group>"; };
+		57C388872026FB620023C63A /* SuperHeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailViewController.swift; sourceTree = "<group>"; };
+		57C3888A2026FB6B0023C63A /* SuperHeroDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SuperHeroDetailViewController.storyboard; sourceTree = "<group>"; };
+		57C3888E2026FD4F0023C63A /* SuperHeroDetailInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailInteractorProtocol.swift; sourceTree = "<group>"; };
+		57C388912026FD600023C63A /* SuperHeroDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailInteractor.swift; sourceTree = "<group>"; };
+		57C388952026FD970023C63A /* SuperHeroDetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		57C388982026FDA20023C63A /* SuperHeroDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailPresenter.swift; sourceTree = "<group>"; };
+		57C3889C2026FDCF0023C63A /* SuperHeroDetailRoutingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailRoutingProtocol.swift; sourceTree = "<group>"; };
+		57C3889F2026FDD90023C63A /* SuperHeroDetailRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailRouting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +257,7 @@
 				57C388532023D8C10023C63A /* FactoryCell */,
 				5765494B20239A8C007098EA /* Extensions */,
 				57AF0A7420231C7700790281 /* SuperHeroMain */,
+				57C388832026FB290023C63A /* SuperHeroDetail */,
 				57AF0A7020231A1C00790281 /* APIClient */,
 				577A643F2023078E00761F97 /* AppDelegate.swift */,
 				577A64462023078E00761F97 /* Assets.xcassets */,
@@ -397,6 +425,54 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		57C388832026FB290023C63A /* SuperHeroDetail */ = {
+			isa = PBXGroup;
+			children = (
+				57C3888D2026FCF30023C63A /* View */,
+				57C388942026FD650023C63A /* Interactor */,
+				57C3889B2026FDA60023C63A /* Presenter */,
+				57C388A22026FDDC0023C63A /* Routing */,
+			);
+			path = SuperHeroDetail;
+			sourceTree = "<group>";
+		};
+		57C3888D2026FCF30023C63A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57C388842026FB500023C63A /* SuperHeroDetailViewProtocol.swift */,
+				57C388872026FB620023C63A /* SuperHeroDetailViewController.swift */,
+				57C3888A2026FB6B0023C63A /* SuperHeroDetailViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57C388942026FD650023C63A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				57C3888E2026FD4F0023C63A /* SuperHeroDetailInteractorProtocol.swift */,
+				57C388912026FD600023C63A /* SuperHeroDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		57C3889B2026FDA60023C63A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				57C388952026FD970023C63A /* SuperHeroDetailPresenterProtocol.swift */,
+				57C388982026FDA20023C63A /* SuperHeroDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		57C388A22026FDDC0023C63A /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				57C3889C2026FDCF0023C63A /* SuperHeroDetailRoutingProtocol.swift */,
+				57C3889F2026FDD90023C63A /* SuperHeroDetailRouting.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -508,6 +584,7 @@
 			files = (
 				57C3887920262A440023C63A /* SuperHeroTableCell.xib in Resources */,
 				577A644A2023078E00761F97 /* LaunchScreen.storyboard in Resources */,
+				57C3888B2026FB6B0023C63A /* SuperHeroDetailViewController.storyboard in Resources */,
 				577A64472023078E00761F97 /* Assets.xcassets in Resources */,
 				57AF0A9220231D9900790281 /* SuperHeroViewController.storyboard in Resources */,
 			);
@@ -518,6 +595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57C3887A20262A440023C63A /* SuperHeroTableCell.xib in Resources */,
+				57C3888C2026FB6B0023C63A /* SuperHeroDetailViewController.storyboard in Resources */,
 				57AF0A9320231D9900790281 /* SuperHeroViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,10 +623,14 @@
 				57AF0A7920231CBA00790281 /* SuperHeroInteracorProtocol.swift in Sources */,
 				57C388492023C59A0023C63A /* EncodableExtension.swift in Sources */,
 				577A64402023078E00761F97 /* AppDelegate.swift in Sources */,
+				57C388882026FB620023C63A /* SuperHeroDetailViewController.swift in Sources */,
 				57C388572023D9060023C63A /* ViewModel.swift in Sources */,
+				57C3889D2026FDCF0023C63A /* SuperHeroDetailRoutingProtocol.swift in Sources */,
 				57C3886A20260C470023C63A /* SuperHeroMapper.swift in Sources */,
+				57C388852026FB500023C63A /* SuperHeroDetailViewProtocol.swift in Sources */,
 				57C388522023D8AD0023C63A /* TableCellFactory.swift in Sources */,
 				57C3885E2023D9B80023C63A /* UITableCellExtension.swift in Sources */,
+				57C388A02026FDD90023C63A /* SuperHeroDetailRouting.swift in Sources */,
 				57C388602023DAEC0023C63A /* SuperHeroRepository.swift in Sources */,
 				57AF0A7D20231CDB00790281 /* SuperHeroPresenter.swift in Sources */,
 				57C3885A2023D9670023C63A /* TableViewExtension.swift in Sources */,
@@ -560,9 +642,13 @@
 				57AF0A8420231D0F00790281 /* SuperHeroRouting.swift in Sources */,
 				57AF0A7620231C9A00790281 /* SuperHeroInteracor.swift in Sources */,
 				57C388462023C5900023C63A /* DecodableExtension.swift in Sources */,
+				57C388922026FD600023C63A /* SuperHeroDetailInteractor.swift in Sources */,
+				57C388962026FD970023C63A /* SuperHeroDetailPresenterProtocol.swift in Sources */,
 				57AF0A8E20231D6400790281 /* SuperHeroViewController.swift in Sources */,
 				57C3887C2026E67D0023C63A /* UIImageViewExtension.swift in Sources */,
 				57C388642023DB400023C63A /* SuperHeroAPIClient.swift in Sources */,
+				57C388992026FDA20023C63A /* SuperHeroDetailPresenter.swift in Sources */,
+				57C3888F2026FD4F0023C63A /* SuperHeroDetailInteractorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,22 +669,30 @@
 				57AF0A7E20231CDB00790281 /* SuperHeroPresenter.swift in Sources */,
 				576549512023C433007098EA /* SuperHeroes.swift in Sources */,
 				57AF0A8120231CE500790281 /* SuperHeroPresenterProtocol.swift in Sources */,
+				57C3889E2026FDCF0023C63A /* SuperHeroDetailRoutingProtocol.swift in Sources */,
+				57C3889A2026FDA20023C63A /* SuperHeroDetailPresenter.swift in Sources */,
 				57C38874202610590023C63A /* SuperHeroStorage.swift in Sources */,
 				57AF0A6E2023199100790281 /* SuperHero.swift in Sources */,
 				57AF0A7320231A9D00790281 /* Router.swift in Sources */,
 				57C3884C2023C6170023C63A /* SuperHeroTests.swift in Sources */,
+				57C388862026FB500023C63A /* SuperHeroDetailViewProtocol.swift in Sources */,
 				57C3887820262A440023C63A /* SuperHeroTableCell.swift in Sources */,
+				57C388972026FD970023C63A /* SuperHeroDetailPresenterProtocol.swift in Sources */,
 				57C3886E20260E540023C63A /* ViewModel.swift in Sources */,
 				57C3886F20260E610023C63A /* EncodableExtension.swift in Sources */,
 				57AF0A8520231D0F00790281 /* SuperHeroRouting.swift in Sources */,
 				57C3884E2023CF140023C63A /* SuperHeroesTests.swift in Sources */,
+				57C388932026FD600023C63A /* SuperHeroDetailInteractor.swift in Sources */,
+				57C388A12026FDD90023C63A /* SuperHeroDetailRouting.swift in Sources */,
 				57C388802026E8600023C63A /* MapperProtocol.swift in Sources */,
+				57C388892026FB620023C63A /* SuperHeroDetailViewController.swift in Sources */,
 				57C3887D2026E67D0023C63A /* UIImageViewExtension.swift in Sources */,
 				57AF0A7720231C9A00790281 /* SuperHeroInteracor.swift in Sources */,
 				57C388472023C5900023C63A /* DecodableExtension.swift in Sources */,
 				57C3886C20260E400023C63A /* TableCellFactory.swift in Sources */,
 				57C3886B20260E2D0023C63A /* SuperHeroMapper.swift in Sources */,
 				57AF0A8F20231D6400790281 /* SuperHeroViewController.swift in Sources */,
+				57C388902026FD540023C63A /* SuperHeroDetailInteractorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

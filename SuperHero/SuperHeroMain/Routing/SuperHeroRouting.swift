@@ -1,8 +1,8 @@
 import UIKit
 
 class SuperHeroRouting: SuperHeroRoutingProtocol {
-    let navigationController: UINavigationController!
-    let viewController: SuperHeroViewController!
+    private let navigationController: UINavigationController!
+    private let viewController: SuperHeroViewController!
     
     init(navigationController: UINavigationController, viewController: SuperHeroViewController) {
         self.navigationController = navigationController
@@ -21,8 +21,8 @@ class SuperHeroRouting: SuperHeroRoutingProtocol {
     //MARK: SuperHeroRoutingProtocol
     
     func superHeroDetail(with superHero: SuperHero) {
-        let storyBoard = UIStoryboard(name: "SuperHeroDetail", bundle: nil)
-        if let superHeroDetailViewController = storyBoard.instantiateViewController(withIdentifier: "SuperHeroDetailID") as? SuperHeroDetail {
+        let storyBoard = UIStoryboard(name: "SuperHeroDetailViewController", bundle: nil)
+        if let superHeroDetailViewController = storyBoard.instantiateViewController(withIdentifier: "SuperHeroDetailViewControllerID") as? SuperHeroDetailViewController {
             navigationController.pushViewController(superHeroDetailViewController, animated: true)
         }
     }
