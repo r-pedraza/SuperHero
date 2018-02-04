@@ -8,7 +8,7 @@ class SuperHeroInteractor: SuperHeroInteractorProtocol {
     }
     
     func execute(completionHandler: @escaping () -> Void) {
-        superHeroRepository.getAllItems(completionHandler: { superHeroresResponse in
+        superHeroRepository.fetchAllItems(completionHandler: { superHeroresResponse in
             completionHandler()
         }, errorHandler: { error in
             debugPrint(error)
@@ -16,7 +16,7 @@ class SuperHeroInteractor: SuperHeroInteractorProtocol {
     }
     
     func superHero(at index: IndexPath) -> SuperHero {
-        return superHeroRepository.getItem(at: index)
+        return superHeroRepository.fetchItem(at: index)
     }
     
     func allSuperHeroes() -> [SuperHero] {
