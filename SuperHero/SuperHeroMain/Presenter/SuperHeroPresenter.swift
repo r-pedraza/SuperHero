@@ -20,6 +20,10 @@ class SuperHeroPresenter: SuperHeroPresenterProtocol {
         return view.tableCellFactoryReference.createCell(viewModel: superHero) as SuperHeroTableCell
     }
     
+    func selectRow(at: IndexPath) {
+        
+    }
+    
     func superHero(at: IndexPath) -> ViewModel {
         return ViewModel.self as! ViewModel
     }
