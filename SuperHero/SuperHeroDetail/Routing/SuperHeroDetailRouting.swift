@@ -8,7 +8,7 @@ class SuperHeroDetailRouting: SuperHeroDetailRoutingProtocol {
         self.superHeroDetailViewController = superHeroDetailViewController
     }
     
-    private func setup() {
+    func setup() {
         let interactor = SuperHeroDetailInteractor()
         let presenter = SuperHeroDetailPresenter()
         interactor.presenter = presenter

@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r1N-zQ-emx">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r1N-zQ-emx">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="-1623.2" y="-424.13793103448279"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Super Hero Navigation Controller-->
         <scene sceneID="aGn-Aq-9Ph">
             <objects>
-                <navigationController storyboardIdentifier="superHeroNavigationBarControllerID" automaticallyAdjustsScrollViewInsets="NO" id="7WH-qI-Y6I" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7WH-qI-Y6I" customClass="SuperHeroNavigationController" customModule="SuperHero" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I6d-9K-2dC">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

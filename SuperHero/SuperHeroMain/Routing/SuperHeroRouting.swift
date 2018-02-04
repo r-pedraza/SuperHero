@@ -1,10 +1,10 @@
 import UIKit
 
 class SuperHeroRouting: SuperHeroRoutingProtocol {
-    private let navigationController: UINavigationController!
+    private let navigationController: SuperHeroNavigationController!
     private let viewController: SuperHeroViewController!
     
-    init(navigationController: UINavigationController, viewController: SuperHeroViewController) {
+    init(navigationController: SuperHeroNavigationController, viewController: SuperHeroViewController) {
         self.navigationController = navigationController
         self.viewController = viewController
     }
@@ -21,9 +21,12 @@ class SuperHeroRouting: SuperHeroRoutingProtocol {
     //MARK: SuperHeroRoutingProtocol
     
     func superHeroDetail(with superHero: SuperHero) {
+        navigationController.show()
         let storyBoard = UIStoryboard(name: "SuperHeroDetailViewController", bundle: nil)
         if let superHeroDetailViewController = storyBoard.instantiateViewController(withIdentifier: "SuperHeroDetailViewControllerID") as? SuperHeroDetailViewController {
-            navigationController.pushViewController(superHeroDetailViewController, animated: true)
+            navigationController.pushViewController(viewController: superHeroDetailViewController, animated: true, completion: {
+                superHeroDetailViewController.setup(with: superHero)
+            })
         }
     }
 }
