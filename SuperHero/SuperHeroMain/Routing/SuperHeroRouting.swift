@@ -18,4 +18,12 @@ class SuperHeroRouting: SuperHeroRoutingProtocol {
         presenter.view = viewController
         viewController.presenter = presenter
     }
+    //MARK: SuperHeroRoutingProtocol
+    
+    func superHeroDetail(with superHero: SuperHero) {
+        let storyBoard = UIStoryboard(name: "SuperHeroDetail", bundle: nil)
+        if let superHeroDetailViewController = storyBoard.instantiateViewController(withIdentifier: "SuperHeroDetailID") as? SuperHeroDetail {
+            navigationController.pushViewController(superHeroDetailViewController, animated: true)
+        }
+    }
 }
