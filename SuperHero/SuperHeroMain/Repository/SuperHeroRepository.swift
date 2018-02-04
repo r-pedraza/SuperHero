@@ -6,7 +6,7 @@ class SuperHeroRepository: Repository {
     private var superHeroMapper = SuperHeroMapper()
     typealias T = SuperHero
     
-    func getAllItems(completionHandler: @escaping ([SuperHero]) -> Void, errorHandler: @escaping (Error) -> Void)  {
+    func fetchAllItems(completionHandler: @escaping ([SuperHero]) -> Void, errorHandler: @escaping (Error) -> Void)  {
         superHeroAPIService.getSuperHeroes(completionhandler: { data in
             DispatchQueue.main.async {
                 do {
@@ -20,7 +20,7 @@ class SuperHeroRepository: Repository {
         }, errorHandler: errorHandler)
     }
     
-    func getItem(at indexPath: IndexPath) -> SuperHero {
+    func fetchItem(at indexPath: IndexPath) -> SuperHero {
         return superHeroStorage.superHeroes()[indexPath.row]
     }
     
