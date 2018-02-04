@@ -4,12 +4,9 @@ extension String: Error {}
 
 class SuperHeroAPIClient {
     func getSuperHeroes(completionhandler: @escaping (Data) -> Void, errorHandler: @escaping (Error) -> Void) {
-        let request = Router.getMarvelSuperHeroes()
-        guard let urlRequest = try? request.asURLRequest() else {
-            errorHandler("No url request")
-            return
-        }
-        URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) -> Void in
+        guard let URL = URL(string: "https://api.myjson.com/bins/bvyob") else { return }
+        let request = URLRequest(url: URL)
+        URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) -> Void in
             if let data = data {
                 completionhandler(data)
             } else {
