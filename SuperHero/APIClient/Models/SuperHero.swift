@@ -1,6 +1,6 @@
-import Foundation
+import UIKit
 
-struct SuperHero: Codable, ViewModel {
+struct SuperHero: Codable, ViewModel {    
     let name: String
     let photo: String
     let realName: String
