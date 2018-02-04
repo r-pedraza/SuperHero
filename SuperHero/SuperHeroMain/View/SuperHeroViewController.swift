@@ -48,7 +48,7 @@ extension SuperHeroViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deleteRows(at: [indexPath], with: .fade)
+        tableView.deselectRow(at: indexPath, animated: true)
         presenter.selectRow(at: indexPath)
     }
 }
