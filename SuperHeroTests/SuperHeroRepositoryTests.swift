@@ -6,7 +6,7 @@ class SuperHeroRepositoryTests: XCTestCase {
 
     func testGetAllItems() {
         let expect = expectation(description: "Get some marvels super heroes!")
-        repository.getAllItems(completionHandler: { superHeroes in
+        repository.fetchAllItems(completionHandler: { superHeroes in
             XCTAssertTrue(!superHeroes.isEmpty)
             expect.fulfill()
         }) { error in
@@ -17,9 +17,9 @@ class SuperHeroRepositoryTests: XCTestCase {
     
     func testGetItemAtIndex() {
         let expect = expectation(description: "Get some marvels super heroes!")
-        repository.getAllItems(completionHandler: { superHeroes in
+        repository.fetchAllItems(completionHandler: { superHeroes in
             let indexPath = IndexPath(row: 0, section: 0)
-            let superHero = self.repository.getItem(at: indexPath)
+            let superHero = self.repository.fetchItem(at: indexPath)
             XCTAssertNotNil(superHero.name)
             XCTAssertNotNil(superHero.photo)
             XCTAssertNotNil(superHero.realName)
